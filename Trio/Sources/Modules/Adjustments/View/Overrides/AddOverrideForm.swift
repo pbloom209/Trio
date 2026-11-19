@@ -312,7 +312,7 @@ struct AddOverrideForm: View {
                                     get: { Int(truncating: state.smbMinutes as NSNumber) },
                                     set: { state.smbMinutes = Decimal($0) }
                                 ), label: Text("")) {
-                                    ForEach(Array(stride(from: 0, through: 180, by: 5)), id: \.self) { minute in
+                                    ForEach(Array(stride(from: 0, through: 240, by: 5)), id: \.self) { minute in
                                         Text("\(minute) min").tag(minute)
                                     }
                                 }
@@ -323,7 +323,7 @@ struct AddOverrideForm: View {
                                     get: { Int(truncating: state.uamMinutes as NSNumber) },
                                     set: { state.uamMinutes = Decimal($0) }
                                 ), label: Text("")) {
-                                    ForEach(Array(stride(from: 0, through: 180, by: 5)), id: \.self) { minute in
+                                    ForEach(Array(stride(from: 0, through: 240, by: 5)), id: \.self) { minute in
                                         Text("\(minute) min").tag(minute)
                                     }
                                 }
