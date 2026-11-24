@@ -386,7 +386,7 @@ struct EditOverrideForm: View {
                                     ),
                                     label: Text("")
                                 ) {
-                                    ForEach(Array(stride(from: 0, through: 180, by: 5)), id: \.self) { minute in
+                                    ForEach(Array(stride(from: 0, through: 240, by: 5)), id: \.self) { minute in
                                         Text("\(minute) min").tag(Decimal(minute))
                                     }
                                 }
@@ -403,7 +403,7 @@ struct EditOverrideForm: View {
                                     ),
                                     label: Text("")
                                 ) {
-                                    ForEach(Array(stride(from: 0, through: 180, by: 5)), id: \.self) { minute in
+                                    ForEach(Array(stride(from: 0, through: 240, by: 5)), id: \.self) { minute in
                                         Text("\(minute) min").tag(Decimal(minute))
                                     }
                                 }
